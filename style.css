@@ -1,0 +1,30 @@
+/* Navbar */
+.navbar{
+  border-bottom: 1px solid #3A3A3A;
+  padding: 20px;
+}
+.nav-link{
+  color: #3A3A3A;
+  font-size: 17px;
+}
+.b-btn{
+  height: 52px;
+  width: 129px;
+  color: #FFFFFF;
+  background-color: #FFA229;
+  border: 1px solid #FFA229;
+  font-size: 17px;
+  margin: 0 20px;
+}
+.c-btn{
+  height: 52px;
+  width: 82px;
+  background-color: white;
+  border: 1px solid #8A8A8A;
+  font-size: 17px;
+  margin: 0 20px;
+}
+.span-lg{
+  font-size: 17px;
+  margin: 0 4px;
+}

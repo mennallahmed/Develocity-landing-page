@@ -4,11 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Develocity landing page</title>
 </head>
 <body>
-  
+  <!--Main section-->
+  <section class="main">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> 
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+            <defs>
+              <linearGradient id="linear-gradient" x1="0.326" y1="-0.069" x2="0.589" y2="0.968" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#6b6bf2"/>
+                <stop offset="1" stop-color="#b058e1"/>
+              </linearGradient>
+            </defs>
+            <path id="deve_logo" data-name="deve logo" d="M400.67,383.12h-17.6v12l12,10,20-12-20,22-20-16.667V375.12h25.6a14.4,14.4,0,0,1,14.4,14.4v1.6l-7.81,3.906-.19-5.506A6.242,6.242,0,0,0,400.67,383.12Z" transform="translate(-375.07 -375.12)" fill="url(#linear-gradient)"/>
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Eco-System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Roadmap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Whitepaper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How To</a>
+            </li>
+          </ul>
+          <button class="b-btn">Buy Deve →</button>
+          <button class="c-btn">Claim</button>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+              <image id="_32px-United-states_flag_icon_round.svg" data-name="32px-United-states_flag_icon_round.svg" width="20" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACE1BMVEUAAACAqtVgkcxKgscpbb4XYbnw8PDw8PDw8PDw8PDx8fHr6+t6odREf8QMWrjw8PDw8PDx8fHj4+PD0uQ+esTw8PD////F1ujw8PDhYXjjY3t1oNFsmc/bFTnjcYd8o9cSXrjbEzfiYnuIqt0qbb7dK0vdiJlsms/lh5jC0+Pw8PD09PRnls7w8PDt7e0VYLrw8PDx8fHpt8Hw8PDfSGOkvt7cK0sVYLnaFjnw8PDw8PDw8PDw8PDw8PDw8PDlfo/le47mjJnaDTLaDDHnhpLgRmHgRmLjfZLjcYbnlqXmlKTw8PD////w8PDx8fHs7Ozu7u7w8PDu7u7z8/Pon6znoK3oornhWHHfTGfriZ3iYHjgUmzZDjPaCzDgS2bidYrfaoDhaYDfS2bcLEzbHD/jaoDeb4UIV7YAUrRdj8vw8PAucL91n9Hc4+tvm9AbZLupwd4DVLUBU7SWtdpums/jcIVIgsaAptR4odJEf8Vmlc7YACcPXLiMrteQsdisw9/q7O7O2uc6eMLG1Obt7u+2yuIlar3gUGoGVrabuNuGqtYYYro7ecMJWLZFgMVAfMQvccBtms8CU7UUX7kwcsA8ecMgZ7w0dMG/0OTrwMjj5+0HV7aNr9ciaL25zOKeutsLWbdcjsuVtNmduduOr9cOW7cGVrXYBy3dME/YBizZBizooK3lgJLYBSvZBCrZCi////95cvBmAAAAZ3RSTlMAGJLV9P366sqaWA1B2f71nCUJmf6KCCzT5TZT9fxRQP38NA/19A+6pC7zGMmWDv70WWeb1djz/f35+Ovpx5iAfhT+/hXX1j8/p6XGB+LlGy7jLRXS1gu8xw01zv7+0z0YitLz/IkX4b4AhAAAAAFiS0dEFnzRqBkAAAAHdElNRQfhCx0KMRVieLpbAAABnklEQVQ4y2NggANGJmYW1nQ2dg5OLm4GTMDDy5eRmZGRkQUC/AKCaNJCwiIZ2Tm5efkQBVlZbKJiyPLiEgWFGUXFWSUZGaUwICmFkJeWKSsHml5RWZWRUQ0HsnIweXmFopoioAIwiVBQragEkVdWycioTQcpqMtAUVCtqgZWoF6YX9/QWJbR1NzS2pbRjgw0QPKaHRkZZbmdQM1duZkZMF9AgJY2UIFOd0ZGT28fUEFlRz+agixdBgY9faBUxoQMGImqwICbwXDihEmTp7RObcuYNn3GlO6MmajAiMF4VmXG7DlZzXMzuudlzV+A4gsgMGEwbe3NyFi4aDHQ9CV1eRnoCswYzDuWZmRMBkIoiabAgmFZBipAU7CcwTILL7BisMavwIaBA78CWwZO/ArsGOxX4AUODI5O1XiAswsDgys+BW7A2HRfiVt+lQcoQXiuxgm8wClKzBaXF7x9IIlS2xe7vJ8/LFkHBGKT9w1CZIzgkDUYIFQbOWuFha9Fdf+6iEi03BkVHYOQjo2Lx5K/ExKTklPWr09JTkpNQ4gCAKzUePUXeqnSAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTExLTI5VDEwOjQ5OjIwKzAwOjAwN4T6ywAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0xMS0yOVQxMDo0OToyMCswMDowMEbZQncAAAAASUVORK5CYII="/>
+            </svg>
+            <span class="span-lg">English ↓</span>    
+          </div>
+        
+        </div>
+      </div>
+    </nav>
+    
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 </html>
