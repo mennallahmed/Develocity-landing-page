@@ -40,6 +40,23 @@
   font-size: 17px;
   margin: 0 4px;
 }
+.nav-icons{
+  direction: rtl;
+}
+.nav-icon-border{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #3A3A3A;
+  border-radius: 50%;
+  padding: 4px 6px;
+  margin: 0 4px; 
+}
+.lg-icon{
+  border: 1px solid #3A3A3A;
+  border-radius: 50%;
+  padding: 2px; 
+  margin-bottom: 6px;
+}
 
 /* Main */
 .my-container{
@@ -61,6 +78,7 @@
   align-content: center;
   flex-direction: column;
   text-align: center;
+  margin-left: 5em;
 }
 .main-header{
   font-size: 40px;
@@ -251,5 +269,42 @@ main span{
  .roadmap-wrapper{
   height: 900px;
  } 
+
+  
+ /*menna*/
+ .navbar{
+  border: none;
+ }
+ .my-container{
+  flex-direction: column-reverse;
+ }
+ .my-container svg{
+  height: 300px;
+  width: 100%;
+ }
+ .right,
+ .left{
+  width: 100%;
+  margin: 0;
+ }
+ .main-header{
+   font-size: 20px;
+   margin-bottom: 10px;
+ }
+ .hide{
+  display: none;
+ }
+ main span{
+  font-size: 11px;
+  margin-top: 5px;
+ } 
+ .b-btn{
+  height: 42px;
+  width: 115px;
+ }
+ .c-btn{
+  height: 42px;
+  width: 115px;
+ }
  
 }
