@@ -1,53 +1,74 @@
 <div class="footer-content">
     <div class="footer-desc">
-    <div class="footer-header">
-        <span>Copyright &copy; Develocity 2022 </span> | 
-        <a href="#"> Contact</a> |
-        <a href="https://develocity.finance/whitepaper.pdf">Whitepaper</a>
+        <div class="footer-header">
+            <span>Copyright &copy; Develocity 2022 </span> 
+            <a href="#"> Contact</a> |
+            <a href="https://develocity.finance/whitepaper.pdf">Whitepaper</a>
+        </div>
+        <div class="footer-info">
+            <p>Cryptocurrency May Be Unregulated In Your Jurisdiction. The Value Of Cryptocurrencies May Go Down As Well
+                As Up. Profits May Be Subject To Capital Gains Or Other Taxes Applicable In Your Jurisdiction.</p>
+        </div>
     </div>
-    <div class="footer-info">
-        <p>Cryptocurrency May Be Unregulated In Your Jurisdiction. The Value Of Cryptocurrencies May Go Down As Well As Up. Profits May Be Subject To Capital Gains Or Other Taxes Applicable In Your Jurisdiction.</p>
-    </div>
-</div>
 </div>
 
 <style>
-    .footer-content{
+    .footer-content {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 180px;
     }
-    .footer-header{
+
+    .footer-header {
         text-align: center;
-    font-size: 20px;
+        font-size: 20px;
 
     }
-    .footer-header a{
+
+    .footer-header a {
         text-decoration: none;
-    font-weight: 600;
+        font-weight: 600;
     }
-    .footer-info{
+
+    .footer-info {
         text-align: center;
         color: #3a3a3a;
-        padding:10px 200px;
+        padding: 10px 200px;
 
     }
-    .footer-info p{
+
+    .footer-info p {
         font-size: 14px;
     }
-    @media screen and (max-width:767px) {
-        .footer-info{
-        text-align: center;
-        padding:6px 10px;
-
-    } 
-    }
     @media screen and (max-width:992px) {
-        .footer-info{
-        text-align: center;
-        padding:6px 100px;
+        .footer-info {
+            text-align: center;
+            padding: 6px 100px;
 
-    } 
+        }
     }
+    @media screen and (max-width:767px) {
+        .footer-info {
+            text-align: center;
+            padding: 0px 0px;
+            width: 335px;
+            font-size: 12px;
+        }
+        .footer-info p{ 
+            font-size: 12px;
+            padding-top: 6px;
+        }
+        .footer-content {
+            height: 160px;
+        }
+        .footer-header{ 
+            font-size: 18px;
+        }
+        .footer-header span{ 
+            display: block;
+        }
+    }
+
+  
 </style>
