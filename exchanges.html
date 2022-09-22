@@ -1,7 +1,7 @@
 <div>
     <h2 class="exchanges-header">Exchanges</h2>
     <div class="exchange-container">
-        <div class="d-flex display-mobile">
+        <div class="d-flex display-mobile ">
             <div class="col-9 col-md-4 exchange-card ">
                 <div class="exchange-content exchange-animate">
                     <img src="./assets/Bitmart.png" class="exchange-logo" alt="Bitmart" >
@@ -12,11 +12,14 @@
                     <img src="./assets/PancakeSwap.png" class="exchange-logo" alt="PancakeSwap" >
                 </div>
             </div>
-            <div class="col-9 col-md-4  exchange-card">
-                <div class="exchange-content ">
-                    <img src="./assets/XT.com.png" class="exchange-logo" alt="XT.com" >
+            <div class="col-9 col-md-4  exchange-card  ">
+                <div class="exchange-content  exchange-animate " style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.6s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.6s;">
+                    <img src="./assets/XT.com.png" class="exchange-logo " alt="XT.com" >
                 </div>
             </div>
+            
+           
+            
         </div>
     </div>
 </div>
@@ -25,17 +28,23 @@
     .exchange-card {
         padding: 20px;
     }
+    .display-mobile{ 
+        align-items: center;
+    }
     .exchange-content{
         border: 1px solid #b3a6a6;
         height: 70px;
         display: flex;
         justify-content: center;
+        opacity: 1 !important;
         align-items: center;
     }
     .exchange-logo{
         width: 200px;
     }
-
+    .exchange-logo-mobile{ 
+        display: none;
+    }
     @media screen and (max-width:992px) {
         .exchange-logo{
         width: 100px;
@@ -47,10 +56,17 @@
         width: 200px;
         }
         .display-mobile{ 
-            overflow: scroll;
+            overflow-x: scroll;
+            /* overflow-y: hidden; */
+
         }
         .display-mobile::-webkit-scrollbar {
             display: none;
         }
+        .exchange-logo{ 
+            width: 150px;
+            height: 50px;
+        }
+       
     }
 </style>
