@@ -67,8 +67,8 @@ fetch('/exchanges.html')
 .then(data=>exchanges.innerHTML=data)
 .then( ()=>{
   ScrollReveal().reveal(' .exchanges-header', { delay: 500 , origin:'left'});
-  ScrollReveal().reveal(' .exchange-card', { delay: 600 , origin:'bottom'});
- 
+  // ScrollReveal().reveal(' .exchange-animate ', { delay: 600 , origin:'bottom', interval:800});
+
   
 } )
 
@@ -84,5 +84,8 @@ fetch('/footer.html')
 
 // animation when scroll 
 ScrollReveal().reveal('.collaboration-header, .exchanges-header', { delay: 500 , origin:'left'});
-
+// ScrollReveal().reveal('.collaboration-title', { delay: 500 , origin:'left'});
+loadMore('.collaboration-title').then(function () {
+  ScrollReveal().sync({ delay: 500 , origin:'left'});
+});
 

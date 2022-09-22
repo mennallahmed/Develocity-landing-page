@@ -227,6 +227,16 @@ main span{
 
 }
 
+.swiper-button-next:after, .swiper-button-prev:after {
+ 
+  line-height: 1;
+  width: 45px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #cabcbc;
+  padding: 8px;
+}
+
 .swiper-pagination-bullet{
   background-color: #6E93f7;
   opacity: 1;
