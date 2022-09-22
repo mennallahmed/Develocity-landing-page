@@ -257,7 +257,7 @@ main span{
 .roadmap-wrapper{
   width: 100%;
   height: 900px;
-  background-image: url('./assets/roadmap/grid-clean.png') ,radial-gradient(#B058E1, #6B6Bf2);
+  background-image: url('./assets/roadmap/grid-clean.png') ,radial-gradient(#9144C4, #141246);
   background-size: contain;
 }
 @media screen and (max-width:992px){
@@ -306,5 +306,17 @@ main span{
   height: 42px;
   width: 115px;
  }
+
+ #myDIV {
+  height: 250px;
+  width: 250px;
+  overflow: auto;
+}
+
+#content {
+  height: 800px;
+  width: 2000px;
+  background-color: coral;
+}
  
 }
