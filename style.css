@@ -315,7 +315,7 @@ main span{
     height: 100px;
   }
   .s-section .main-p{
-    font-size: 14px;
+    font-size: 1em;
     padding: 0;
   }
   .s-border{
@@ -345,14 +345,18 @@ main span{
     display: none;
   }
   .eco-section .main-p{
-    font-size: 12px;
+    font-size: .95em;
   }
   .e-btn{
-    width: 200px;
+    width: 18em;
     height: 42px;
     font-size: 13px;
     margin: 0;
     margin-bottom: 20px;
+    margin: 10px;
+  }
+  .g-container{
+    width: 70%;
   }
  
 }
